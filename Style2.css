@@ -1,0 +1,31 @@
+body{
+   
+    background-color:#ffd6d6;
+    width: 200vh;  
+    height: 100vh ; 
+    background-size: 100vh;
+  
+
+}
+.raw{
+    font-style: normal;
+    font-size: 180%;
+    text-align: block;
+}
+.table{
+    background-color:#e0aba4;
+    font-style: normal;
+    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

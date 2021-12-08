@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+      <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
+  <title>ARK SHOP</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+<div class="header">
+<div class="container">
+     <div class="navbar">
+     <div class="logo">
+             <img src="images/logo.png" width="125px">
+ </div>
+
+ <img src="images/cart.png" width="50px" height="50px" />
+     </div>
+
+ </div>
+ </div>
+
+      <!----------account-page------------>
+         <div class="account-page">
+             <div class="container">
+                 <div class="row">
+                   
+                     <div class="col-2">
+                       <div class="form-container">
+                          <div class="form-btn">
+                             <span onclick="login()" >Login</span>
+                              <span onclick="register()">Register</span>
+                              <hr id="Indicator">
+                          </div>
+
+                          <form id="LoginForm"  method="post" action="auth.php">
+                             <input type="text"placeholder="Username" name="username"/>
+                              <input type="password" placeholder="Password" name="password_1"/>
+                              <button type="submit" class="btn">login</button>
+                              <a href="">Forgot password</a>
+                          </form >
+                          <form id="RegForm"  method="post" action="registertest.php">
+                             <input type="text"placeholder="Username" name="username"/>
+                              <input type="Email" placeholder="Email" name="username"/>
+                              <input type="password" placeholder="Password" name="password_1"/>
+                              <input type="password" placeholder="confirm Password" name="password_2"/>
+                              <button type="submit" class="btn">Register</button>
+
+                          </form>
+
+                       </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+
+     <!------------footer---------------->
+
+     <div class="footer">
+         <div class="container">
+             <div class="row">
+                 <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download from playstore</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                 </div>
+                 <div class="footer-col-2">
+                   <img src="images/logo.png" alt="" />
+                    <p>simple,transparent,honest</p>
+                 </div>
+                   <div class="footer-col-3">
+                    <h3>useful links</h3>
+                      <ul>
+                          <li>Coupons</li>
+                          <li>Blog post</li>
+                          <li>Return Policy</li>
+                          <li>Join Affiliate</li>
+                      </ul>
+                      </div>
+              <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                      <ul>
+                          <li>Facebook</li>
+                          <li>Twitter</li>
+                          <li>Instagram</li>
+                          <li>YouTube</li>
+                      </ul>
+
+                 </div>
+
+             </div>
+              <hr>
+              <p class="Copyright">Copyright 2021 - arkshop</p>
+
+
+         </div>
+     </div>
+     <!----------js for account-------->
+
+      <script>
+        var LoginForm =document.getElementById("LoginForm");
+        var RegForm =document.getElementById("RegForm");
+        var Indicator =document.getElementById("Indicator");
+
+        function register(){
+               RegForm.style.transform = "translateX(0px)";
+               LoginForm.style.transform = "translateX(0px)";
+               Indicator.style.transform = "translateX(100px)";
+           }
+           function login(){
+               RegForm.style.transform = "translateX(300px)";
+               LoginForm.style.transform = "translateX(300px)";
+               Indicator.style.transform = "translateX(0px)";
+           }
+      </script>
+
+
+
+
+
+</body>
+
+</html>
